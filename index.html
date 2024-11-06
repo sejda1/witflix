@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./index.css" rel="stylesheet" />
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./index.css" rel="stylesheet">
+    <link href="./reset.css" rel="stylesheet">
     <title>WiTFLiX | Browse</title>
-  </head>
-  <body class="vertical-line">
-    <header>
-      <h1>WiTFLiX</h1>
-      <nav>
-        <!-- Challenge 1: nav nasıl ortalanacak?-->
-        <a href="">Topic 1</a>
-        <a href="">Topic 2</a>
-        <a href="">Topic 3</a>
-        <a href="">Topic 4</a>
-      </nav>
-      <div class="user-panel">
-        <input type="text" placeholder="Search.." />
-        <!--  Challenge 2: Büyüteç input alanına nasıl girecek?-->
-        <i id="buyutec" class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell notifications fa-2x"></i>
-        <img class="avatar" src="https://picsum.photos/50" />
-      <!---hamburger menu uzerine gelince gorunur olmasini nasil yapariz?-->
-      <i class="fa-solid fa-bars fa-2xl nav-menu"></i>
-    </div>
-    </header>
+</head>
+<body>
+    <section class="background">
+        <header class="header-container sticky">
+            <div class="header-left">
+                <img class="netflix-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="Netflix Logo" />
+            </div>
+            <nav>
+              <div class="hamburger-menu" id="menuToggle">
+                  &#9776; <!-- Hamburger icon -->
+              </div>
+              <ul class="menu-links" id="menuLinks">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">Popular Movies</a></li>
+                  <li><a href="#">Recommended For You</a></li>
+              </ul>
+          </nav>
+            <div class="user-panel">
+                <div class="search-box">
+                    <input type="text" placeholder="Search.." />
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <i class="fa-solid fa-bell notifications fa-2x"></i>
+                <img class="avatar" src="https://picsum.photos/50" alt="User Avatar" />
+                </div>
+            </div>
+        </header>
+ 
     <main class="hero">
       <div class="main-movie">
-        <img alt="" src="https://image.tmdb.org/t/p/w300/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" />
-        <h2>Movie Name</h2>
+        <h2>Hızlı ve Öfkeli 10</h2>
         <div class="movie-info">
           <span class="user-rating"
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
@@ -48,8 +50,7 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et
           eligendi reprehenderit, aliquam iste porro ex atque nesciunt sapiente
-          explicabo. Totam dolores deleniti ad accusantium? Earum accusantium
-          laborum aliquid ullam.
+          explicabo. 
         </p>
         <div class="movie-details">
           <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
@@ -59,6 +60,7 @@
         <button><i class="fa-solid fa-play"></i> Play Now</button>
       </div>
     </main>
+  </section>
     <section class="suggestion">
       <!-- 7 tane movie card olsun. scroll ile sağa-sola kaysın???-->
       <div class="suggestion-row">
@@ -243,11 +245,10 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam
           repellat mollitia placeat saepe ipsa provident ut, molestiae eaque
-          eligendi culpa similique non earum assumenda? Iste quisquam
-          necessitatibus maxime sequi optio, cupiditate non voluptatibus dolor
-          hic quidem, architecto, recusandae veritatis?
+          eligendi culpa similique non earum assumenda.
         </p>
       </div>
+      <div class="footer-bottom-navigation">
       <div class="social-navigation">
         <h5>Follow Us</h5>
         <div>
@@ -263,6 +264,9 @@
           <img src="./assets/googlePlay.png" />
         </div>
       </div>
+      </div>
     </footer>
+  </section>
+  <script src="script.js"></script>
   </body>
 </html>

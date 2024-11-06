@@ -27,7 +27,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     gap: .5rem;
-    flex: 1;
+   
 }
 
 header nav a {
@@ -52,12 +52,13 @@ header .user-panel {
 
 #buyutec {
     position: absolute;
-    margin: 6rem;
+    margin: 8rem;
 }
 .user-panel img {
     border-radius: 100px;
     width: 2.5rem;
 }   
+
 
 /* hero */
 main {
@@ -105,4 +106,153 @@ button {
 button i {
     margin-left: -1rem;
     margin-right: .5rem;
+}
+
+/* suggestion */
+
+.suggestion-row {
+    margin-bottom: 2rem
+}
+
+.suggestion-row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-row-title a {
+    text-decoration: none;
+    color: gray;
+}
+
+.suggestion-row-title a:hover {
+    color: red;
+}
+
+.suggestion-row-title h3 {
+    margin: .5rem 0
+}
+
+.suggestion-movies {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+}
+.suggestion-movies::-webkit-scrollbar {
+    display: none;
+}
+.movie-info img{
+    width: 15rem;
+    height: 18rem;
+    border-radius: 5px;
+}
+
+.movie-card {
+    border: 1px solid black;
+    min-width: 250px;
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.movie-card h4 {
+    margin: 0;
+}
+
+.movie-card .content-rating {
+    margin-left: 0;
+}
+
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+
+.movie-card button {
+    padding: .5rem 1.8rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+}
+
+.movie-card button i {
+    margin-left: -.8rem;
+    margin-right: .3rem;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer h5 {
+    margin-top:0;
+}
+
+.footer-navigation nav {
+    display: flex;
+    gap: 1rem;
+}
+.footer-navigation nav a{
+    text-decoration: none;
+    color: rgb(111, 111, 111);
+}
+
+.social-navigation {
+    min-width: 120px
+}
+
+.mobile-app-navigation {
+    min-width: 230px;
+}
+
+.mobile-app-navigation img {
+    height: 2rem
+}
+
+
+@media (max-width: 500px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    header .user-panel {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        margin-top: 1.1rem;
+    }
+
+
+    .main-movie {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+
+    .social-navigation, .mobile-app-navigation {
+        width: 100%;
+    }
 }

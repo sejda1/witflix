@@ -61,23 +61,28 @@
   }
   
   /* Arama Kutusu ve İkon */
-  .search-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  .search-box input {
-    padding: 0.3rem 1.5rem 0.3rem 0.5rem;
-    width: 7rem;
-    border: none;
-    border-radius: 0.3rem;
-  }
-  .search-icon {
-    position: absolute;
-    right: 0.5rem;
-    color: gray;
-  }
-  
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-box input {
+  padding: 0.3rem 3rem 0.3rem 0.5rem;
+  width: 7rem;
+  border-radius: 0.3rem;
+  color: #444;
+}
+.search-box input:focus {
+  outline: 2px solid red; /* Çerçevenin rengi ve kalınlığı */
+}
+.search-icon {
+  position: absolute;
+  right: 0.5rem;
+  color: gray;
+}
+.avatar {
+  border-radius:100px;
+}
   /* Hamburger Menü ve Dropdown */
   nav {
     display: flex;
@@ -117,14 +122,24 @@
     display: none;
   }
   
-  button {
-    background: red;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 1.1rem;
-  }
+button {
+  background-color: red;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+button:active {
+  background-color: red;
+  box-shadow: 0 5px gray;
+  transform: translateY(4px);
+}
   
   /* hero */
   main {
